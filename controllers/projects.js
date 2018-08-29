@@ -5,7 +5,7 @@ router.get('/', function(req, res){
 	res.send('project navigation route');
 });
 
-route.get('/monsters-within', function(req, res){
+router.get('/monsters-within', function(req, res){
 	res.send('Game project');
 });
 

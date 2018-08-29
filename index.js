@@ -13,10 +13,15 @@ app.use(ejsLayouts);
 app.use(bodyParser.urlencoded({extended: false}));
 
 //include controllers/routers
+app.use('/projects', require('./controllers/projects'));
 
 //define routes
 app.get('/', function(req, res){
 	res.render('home');
+});
+
+app.get('/about', function(req, res){
+	res.send('about page');
 });
 
 app.get('/resume', function(req, res){
