@@ -19,6 +19,10 @@ app.get('/', function(req, res){
 	res.render('home');
 });
 
+app.get('/resume', function(req, res){
+	res.send('resume goes here');
+});
+
 app.get('*', function(req, res){
 	console.log('wildcard route');
 	res.render('error');
